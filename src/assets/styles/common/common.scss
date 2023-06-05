@@ -62,6 +62,10 @@
 	@include margin(auto);
 }
 
+.m--0-auto {
+	@include margin(0 auto);
+}
+
 .mt--0 {
 	@include marginTop(0);
 }
@@ -82,8 +86,20 @@
 	@include marginRight(auto);
 }
 
+.mr--10 {
+	@include marginRight(10px);
+}
+
+.mr--20 {
+	@include marginRight(20px);
+}
+
 .mb--0 {
 	@include marginBottom(0);
+}
+
+.mb--5 {
+	@include marginBottom(5px);
 }
 
 .mb--10 {
@@ -92,6 +108,10 @@
 
 .mb--20 {
 	@include marginBottom(20px);
+}
+
+.mb--40 {
+	@include marginBottom(40px);
 }
 
 .mb--auto {
@@ -106,8 +126,136 @@
 	@include marginLeft(auto);
 }
 
+.ml--10 {
+	@include marginLeft(10px);
+}
+
 .p--0 {
 	@include padding(0);
+}
+
+.p--10 {
+	@include padding(10px);
+}
+
+.p--15 {
+	@include padding(15px);
+}
+
+.p--20 {
+	@include padding(20px);
+}
+
+.p--25 {
+	@include padding(25px);
+}
+
+.p--30 {
+	@include padding(30px);
+}
+
+.pt--5 {
+	@include paddingTop(5px);
+}
+
+.pt--10 {
+	@include paddingTop(10px);
+}
+
+.pt--15 {
+	@include paddingTop(15px);
+}
+
+.pt--20 {
+	@include paddingTop(20px);
+}
+
+.pt--23 {
+	@include paddingTop(23px);
+}
+
+.pt--25 {
+	@include paddingTop(25px);
+}
+
+.pt--70 {
+	@include paddingTop(70px);
+}
+
+.pr--0 {
+	@include paddingRight(0);
+}
+
+.pr--5 {
+	@include paddingRight(5px);
+}
+
+.pr--10 {
+	@include paddingRight(10px);
+}
+
+.pr--15 {
+	@include paddingRight(15px);
+}
+
+.pr--20 {
+	@include paddingRight(20px);
+}
+
+.pr--25 {
+	@include paddingRight(25px);
+}
+
+.pr--30 {
+	@include paddingRight(30px);
+}
+
+.pb--0 {
+	@include paddingBottom(0);
+}
+
+.pb--5 {
+	@include paddingBottom(5px);
+}
+
+.pb--10 {
+	@include paddingBottom(10px);
+}
+
+.pb--15 {
+	@include paddingBottom(15px);
+}
+
+.pb--20 {
+	@include paddingBottom(20px);
+}
+
+.pl--0 {
+	@include paddingLeft(0);
+}
+
+.pl--5 {
+	@include paddingLeft(5px);
+}
+
+.pl--10 {
+	@include paddingLeft(10px);
+}
+
+.pl--15 {
+	@include paddingLeft(15px);
+}
+
+.pl--20 {
+	@include paddingLeft(20px);
+}
+
+.pl--24 {
+	@include paddingLeft(24px);
+}
+
+.pl--30 {
+	@include paddingLeft(30px);
 }
 
 .bottom--0 {
@@ -303,6 +451,10 @@
 
 .font-family--rubik {
 	font-family: $font-rubik;
+}
+
+.font--italic {
+	font-style: italic;
 }
 
 .font--light {
@@ -535,6 +687,7 @@
 .scrollbar--hidden {
 	&::-webkit-scrollbar {
 		width: 0;
+		height: 0;
 	}
 }
 

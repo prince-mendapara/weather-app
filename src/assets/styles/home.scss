@@ -1,0 +1,136 @@
+.main-app {
+	min-height: $full-viewport-height;
+	width: $full-width;
+	height: 100vh;
+}
+
+.container {
+	width: 100%;
+}
+
+.page-wrapper {
+	display: flex;
+	padding: 15px;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-image: linear-gradient(0, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%, #000000),
+		url('../images/weather.png');
+	backdrop-filter: blur(5px);
+	min-height: $full-viewport-height;
+
+	.main-section {
+		width: 70%;
+	}
+
+	.weather-section {
+		border-radius: 10px;
+		background-color: #0000009c;
+		backdrop-filter: blur(5px);
+		@include padding(20px);
+
+		.current-city {
+			.city-name {
+				font-size: 80px;
+				color: #bba3a3;
+			}
+
+			.current-date {
+				font-style: italic;
+			}
+		}
+
+		.current-weather {
+			@include marginTop(60px);
+
+			.current-temp {
+				font-size: 60px;
+			}
+
+			.current-condition {
+				font-style: italic;
+				font-size: 60px;
+			}
+
+			.astro-title {
+				color: #bfa800;
+			}
+		}
+	}
+
+	.current-forecast-section {
+		border-radius: 10px;
+		background-color: #0000009c;
+		backdrop-filter: blur(5px);
+		@include padding(20px);
+		@include marginTop(20px);
+
+		.title {
+			font-size: 30px;
+			color: #bb8d3a;
+		}
+
+		.hour-forecast-wrapper {
+			.hour-card {
+				@include padding(10px);
+				@include marginRight(10px);
+				border-radius: 10px;
+				border: 1px solid grey;
+				background-color: rgba(197, 197, 197, 0.322);
+				backdrop-filter: blur(5px);
+				min-width: 100px;
+			}
+		}
+	}
+
+	.forecast-section {
+		width: 30%;
+		min-width: 400px;
+		border-radius: 10px;
+		background-color: #0000009c;
+		backdrop-filter: blur(5px);
+		@include padding(20px);
+		@include marginLeft(20px);
+
+		.search-wrapper {
+			.input {
+				min-height: 45px;
+				width: 100%;
+				border-radius: 10px;
+				border: 1px solid #959596;
+				@include padding(0 24px);
+				@include marginBottom(7px);
+				background-color: transparent;
+			}
+
+			.button {
+				height: 40px;
+				width: 100%;
+				border-radius: 10px;
+				@include padding(5px 18px);
+				transition: all 0.2s linear;
+				color: $white;
+				background-color: #63c463;
+			}
+		}
+
+		.forecast-wrapper {
+			.title {
+				font-size: 30px;
+				color: #bb8d3a;
+			}
+
+			.forecast-card {
+				.condition-image {
+					width: 70px;
+					height: 70px;
+				}
+
+				.forecast-min,
+				.forecast-max {
+					width: max-content;
+				}
+			}
+		}
+	}
+}

@@ -15,7 +15,7 @@ body {
 	background-color: $black;
 	font-size: $font-size-browser-default;
 	font-weight: $font-regular;
-	line-height: $line-height-default;
+	line-height: $line-height-sm;
 	color: $white;
 	letter-spacing: 1px;
 	scroll-behavior: smooth;
@@ -24,6 +24,7 @@ body {
 
 ::-webkit-scrollbar {
 	width: 4px;
+	height: 4px;
 }
 
 ::-webkit-scrollbar-track {
