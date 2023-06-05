@@ -1,0 +1,55 @@
+//Font family
+$font-rubik: 'Rubik';
+
+//Font Weight Variables
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-extra-bold: 800;
+$font-heavy: 900;
+$font-extra-heavy: 1000;
+
+//Font size variables
+$font-size-xxs: 0.75rem; // 12px
+$font-size-xs: 0.8125rem; // 13px
+$font-size-sm: 0.875rem; // 14px
+$font-size-default: 0.9375rem; // 15px
+$font-size-browser-default: 1rem; // 1rem = 16px
+$font-size-md: 1.0625rem; // 17px
+$font-size-lg: 1.125rem; // 18px
+$font-size-xl: 1.1875rem; // 19px
+$font-size-xxl: 1.25rem; // 20px
+
+//Width and height variables
+$full-width: 100%;
+$full-height: 100%;
+$full-viewport-width: 100vw;
+$full-viewport-height: 100vh;
+
+//Color variables
+$white: #ffffff;
+$black: #000000;
+
+//Line Height variables
+$line-height-sm: 1;
+$line-height-default: 1.2;
+$line-height-md: 1.5;
+$line-height-lg: 2;
+
+//Border radius width variables
+$border-radius-xxs: 2px;
+$border-radius-xs: 3px;
+$border-radius-sm: 4px;
+$border-radius-default: 6px;
+$border-radius-md: 8px;
+$border-radius-lg: 10px;
+$border-radius-xl: 16px;
+$border-radius-xxl: 20px;
+$border-radius-circle: 50%;
+
+//latter Spacing variables
+$letter-spacing-base: 0.5px !default;
+$letter-spacing-lg: 2px !default;
+$letter-spacing-xl: 4px !default;
