@@ -1,5 +1,5 @@
-import { isEmpty } from 'lodash';
 import { Fragment } from 'react';
+import isEmpty from 'lodash/isEmpty';
 import { IDay, IForecast } from '../interface/home.interface';
 import Spinner from '../shared/spinner/spinner';
 

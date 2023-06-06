@@ -1,4 +1,4 @@
-import { isEmpty } from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 import { IAstro, ICurrentWeather } from '../interface/home.interface';
 
 interface IProps {

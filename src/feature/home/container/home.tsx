@@ -1,10 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
 import CurrentForecast from '../component/currentForecast';
 import Forecast from '../component/forecast';
+import ForecastChart from '../component/forecastChart';
 import Weather from '../component/weather';
 import { ICurrentWeather, IForecast } from '../interface/home.interface';
-
-const REACT_APP_WEATHER_API = '';
 
 const Home: React.FC = () => {
 	const [searchCity, setSearchCity] = useState<string>('');
@@ -16,7 +15,9 @@ const Home: React.FC = () => {
 		async (city = 'ahmedabad') => {
 			try {
 				setActionLoading(true);
-				const response = await fetch(`${REACT_APP_WEATHER_API}&q=${city}`);
+				const response = await fetch(
+					`http://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API}&days=7&q=${city}`
+				);
 				const data = await response.json();
 				setCurrentWeather({ location: { ...data.location }, current: { ...data.current } });
 				setWeatherForecast([...data.forecast.forecastday]);
@@ -42,6 +43,7 @@ const Home: React.FC = () => {
 					<div className='main-section'>
 						<Weather weather={currentWeather} astro={weatherForecast[0]?.astro} />
 						<CurrentForecast loading={actionLoading} forecast={weatherForecast[0]} />
+						<ForecastChart loading={actionLoading} forecast={weatherForecast} />
 					</div>
 					<Forecast
 						loading={actionLoading}
