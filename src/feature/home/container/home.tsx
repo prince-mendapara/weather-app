@@ -16,7 +16,7 @@ const Home: React.FC = () => {
 			try {
 				setActionLoading(true);
 				const response = await fetch(
-					`http://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API}&days=7&q=${city}`
+					`https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API}&days=7&q=${city}`
 				);
 				const data = await response.json();
 				setCurrentWeather({ location: { ...data.location }, current: { ...data.current } });
