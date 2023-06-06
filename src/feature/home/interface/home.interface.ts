@@ -67,3 +67,7 @@ export interface ICondition {
 	icon: string;
 	code: number;
 }
+
+export interface IForecactCard {
+	item: IHour;
+}

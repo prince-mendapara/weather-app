@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import isEmpty from 'lodash/isEmpty';
-import { IForecast, IHour } from '../interface/home.interface';
+import { IForecactCard, IForecast, IHour } from '../interface/home.interface';
 import Spinner from '../shared/spinner/spinner';
 
 interface IProps {
@@ -29,10 +29,6 @@ const CurrentForecast: React.FC<IProps> = (props) => {
 		</div>
 	);
 };
-
-interface IForecactCard {
-	item: IHour;
-}
 
 const HourForecastCard: React.FC<IForecactCard> = (props) => {
 	const { item } = props;
